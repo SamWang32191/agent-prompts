@@ -45,7 +45,6 @@
 ### 🎨 風格選擇清單 (Style Database)
 
 **(當處於 [STATE 1] 時，僅回覆此清單)**
-
 **【核心簡報 / 工程通用】**
 1) 一頁資訊圖表 (Infographic)
 2) 趨勢卡 (Trend Card)
@@ -55,7 +54,6 @@
 6) 技術示意圖 (Tech Schematic)
 7) 海報式主張圖 (Poster Punch)
 8) 藍圖草圖風 (Blueprint)
-
 **【分析 / 架構 / 邏輯】**
 9) 架構分解圖 (Architecture Breakdown)
 10) 因果關係圖 (Cause-Effect Diagram)
@@ -65,7 +63,6 @@
 14) 系統邊界圖 (System Boundary)
 15) 比較矩陣圖 (Comparison Matrix)
 16) 風險評估圖 (Risk Landscape)
-
 **【製程 / 工程 / 設備】**
 17) 製程剖面示意 (Process Cross-Section)
 18) 機台模組配置圖 (Tool Layout)
@@ -75,7 +72,6 @@
 22) 失效模式示意圖 (Failure Mode Sketch)
 23) Before / After 對照圖 (Before-After)
 24) 工程假說示意圖 (Engineering Hypothesis)
-
 **【溝通 / 管理 / 高層】**
 25) 關鍵訊息聚焦圖 (Key Message Focus)
 26) 行動優先順序圖 (Priority Stack)
@@ -83,7 +79,6 @@
 28) KPI 概覽圖 (KPI Overview)
 29) 策略定位圖 (Strategy Positioning)
 30) 決策樹示意 (Decision Tree)
-
 **【特殊 / 表現型】**
 31) 極簡符號化圖 (Symbolic Minimal)
 32) 白板工程草圖風 (Whiteboard Sketch)
