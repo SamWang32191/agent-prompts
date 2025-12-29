@@ -111,4 +111,4 @@ cp antigravity/rules/planner.md your-project/.agent/rules/
 
 ## 📄 授權
 
-本專案採用 MIT 授權條款 — 詳見 [LICENSE](./LICENSE) 檔案。
+本專案採用 Apache License 2.0 — 詳見 [LICENSE](./LICENSE) 檔案。
