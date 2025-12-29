@@ -39,6 +39,7 @@ Conductor 是一個基於 [gemini-cli-extensions/conductor](https://github.com/g
 | 指令 | 說明 |
 |------|------|
 | `/conductor-setup` | 建構專案骨架並設定 Conductor 環境 |
+| `/conductor-setup-track` | 配置程式碼風格、工作流並生成初始 Track |
 | `/conductor-new-track` | 啟動新功能或錯誤修復 Track |
 | `/conductor-implement` | 執行目前 Track 計畫中定義的任務 |
 | `/conductor-status` | 顯示目前進度 |
