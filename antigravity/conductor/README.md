@@ -25,23 +25,36 @@ Conductor 旨在管理您開發任務的整個生命週期。
 
 ### 1. 設定專案 (執行一次)
 
-當您執行 `/conductor-setup` 時，Conductor 會協助您定義專案上下文的核心元件。此上下文隨後將用於您或您團隊中的任何人建立新元件或功能。
+專案設定分為兩個階段：
 
-- **產品 (Product)：** 定義專案上下文（例如：使用者、產品目標、高階功能）。
-- **產品準則 (Product Guidelines)：** 定義標準（例如：文風、品牌訊息、視覺識別）。
-- **技術堆疊 (Tech Stack)：** 配置技術偏好（例如：語言、資料庫、框架）。
-- **工作流 (Workflow)：** 設定團隊偏好（例如：TDD、提交策略）。使用 [workflow.md](templates/workflow.md) 作為可自定義的模板。
+#### 第一階段：定義產品與技術棧
+執行 `/conductor-setup` 以定義專案的核心上下文。
+- **產品 (Product)：** 定義專案願景、目標與高階功能。
+- **產品準則 (Product Guidelines)：** 定義標準（如文風、品牌訊息）。
+- **技術堆疊 (Tech Stack)：** 配置技術偏好（語言、框架、資料庫）。
 
 **生成的產出物：**
 - `conductor/product.md`
 - `conductor/product-guidelines.md`
 - `conductor/tech-stack.md`
-- `conductor/workflow.md`
-- `conductor/code_styleguides/`
-- `conductor/tracks.md`
 
 ```bash
 /conductor-setup
+```
+
+#### 第二階段：配置工作流與初始 Track
+執行 `/conductor-setup-track` 以完成環境設定（通常由第一階段自動接續）。
+- **風格指南 (Code Styleguides)：** 選擇程式碼規範。
+- **工作流 (Workflow)：** 設定團隊開發偏好（TDD、提交策略）。
+- **初始 Track：** 自動生成第一個開發任務與計畫。
+
+**生成的產出物：**
+- `conductor/code_styleguides/`
+- `conductor/workflow.md`
+- `conductor/tracks.md`
+
+```bash
+/conductor-setup-track
 ```
 
 ### 2. 開始一個新 Track (功能或 Bug)
@@ -96,7 +109,8 @@ Conductor 將會：
 
 | 命令 | 描述 | 產出物 |
 | :--- | :--- | :--- |
-| `/conductor-setup` | 建構專案骨架並設定 Conductor 環境。每個專案執行一次。 | `conductor/product.md`<br>`conductor/tech-stack.md`<br>`conductor/workflow.md`<br>`conductor/tracks.md` |
+| `/conductor-setup` | 初始化專案定義，包含產品願景與技術棧。 | `conductor/product.md`<br>`conductor/product-guidelines.md`<br>`conductor/tech-stack.md` |
+| `/conductor-setup-track` | 配置程式碼風格、工作流並生成初始 Track。 | `conductor/code_styleguides/`<br>`conductor/workflow.md`<br>`conductor/tracks.md` |
 | `/conductor-new-track` | 啟動新功能或錯誤修復 Track。生成 `spec.md` 和 `plan.md`。 | `conductor/tracks/<id>/spec.md`<br>`conductor/tracks/<id>/plan.md`<br>`conductor/tracks.md` |
 | `/conductor-implement` | 執行目前 Track 計畫中定義的任務。 | `conductor/tracks.md`<br>`conductor/tracks/<id>/plan.md` |
 | `/conductor-status` | 顯示 tracks 檔案和進行中 Track 的目前進度。 | 讀取 `conductor/tracks.md` |
