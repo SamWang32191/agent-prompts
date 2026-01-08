@@ -41,10 +41,19 @@ agent-prompts/
 
 ## 🛠️ 使用方式
 
-### Antigravity 規則
+### Antigravity Rules
 1. 將所需的規則檔案複製到你的專案 `.agent/rules/` 目錄，Antigravity 將自動載入。
     ```bash
     cp antigravity/rules/planner.md your-project/.agent/rules/
+    ```
+
+### Conductor (工作流)
+> [!IMPORTANT]
+> Conductor 的安裝方式與一般規則不同。它包含多個規則、模板與工作流遺產，必須複製整個 `agent/` 目錄。
+
+1. 將 `antigravity/conductor/agent/` 下的所有內容複製到專案的 `.agent/` 目錄：
+    ```bash
+    cp -r antigravity/conductor/agent/* your-project/.agent/
     ```
 
 ### Gemini Gems
